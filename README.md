@@ -68,7 +68,7 @@ Copy code
 npm start
 Visit http://localhost:3000 in your browser.
 
-### Usage
+### Usage 
 Register/Log in: Users can register and log in to access their dashboards.
 Admin Dashboard: Admins can manage users and assignments.
 Student Dashboard: Students can view and submit assignments.
