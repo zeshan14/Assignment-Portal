@@ -1,0 +1,16 @@
+<h2>Admin Dashboard</h2>
+<ul>
+    {{#each assignments}}
+    <li>
+        <p>Task: {{task}}</p>
+        <p>User: {{userId}}</p>
+        <p>Status: {{status}}</p>
+        <form action="/assignments/{{_id}}/accept" method="POST">
+            <button type="submit">Accept</button>
+        </form>
+        <form action="/assignments/{{_id}}/reject" method="POST">
+            <button type="submit">Reject</button>
+        </form>
+    </li>
+    {{/each}}
+</ul>

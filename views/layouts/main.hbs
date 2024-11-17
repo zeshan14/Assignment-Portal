@@ -1,0 +1,28 @@
+<!-- views/layouts/main.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+<body>
+    <header>
+        <h1>Assignment Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/admin">Admin Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{{body}}} <!-- This will inject the content of each page (login, register, etc.) -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Assignment Portal</p>
+    </footer>
+</body>
+</html>
